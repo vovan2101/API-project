@@ -7,14 +7,15 @@
         <meta name="Description" content="Enter your description here"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="shortcut icon" type="image/png" href="umbrella.jpg">
         <link rel="stylesheet" href="css/style.css">
         <script src="./js/main.js" defer></script>
         <title>Weather</title>
     </head>
-    <body>
-        <nav class="navbar navbar-black bg-black">
+    <body background="lg.jpg">
+        <nav class="navbar navbar-light" style="background-color: white">
             <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1 text-light">Best Weather</span>
+                <span id="nav" class="navbar-brand mb-0 h1 text-dark">Best Weather</span>
             </div>
         </nav>
 
@@ -23,21 +24,37 @@
 
             <div class="row">
                 <form action="" id="weatherForm">
-                    <div class="row">
+                    <div id='fields' class="row">
                         <div class="col-5">
                             <input class="form-control" name="city" type="text" placeholder="city">
-                        </div>
-                        <div class="col-2">
-                            <input type="submit" class="btn btn-primary d-block w-100">
-                        </div>
+                            <input id='button' type="submit" class="btn btn-dark d-block w-100">
+                        </div>                 
                     </div>
+            
+                    
                 </form>
+    
             </div>
 
             <div class="row" id="weatherTable">
                 <!-- Create table and display standings here via JavaScript -->
             </div>
+            
+
+            <p class="recommendation">
+                <!-- for weather recomendation -->
+            </p>
+
         </div>
+
+        <footer id='foot' class="bg-white text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: white">
+              © 2022 Copyright:
+              <a class="text-dark" href="">Vlad.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
