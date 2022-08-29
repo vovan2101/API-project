@@ -23,3 +23,9 @@ html{
     height: 88%;
 }
 
+#recommendation {
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}

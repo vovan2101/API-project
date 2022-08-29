@@ -66,30 +66,39 @@
 
     function weatherRecommendation(weatherForm){
         let message = document.getElementById('recommendation')
+        console.log(message)
         if(weatherForm.main.temp < 50){
             message.innerHTML = 'It is very cold weather today. Stay home.'
             let navBar = document.getElementById('nav')
             navBar.className = 'navbar navbar-dark bg-primary'
             let button = document.getElementById('button')
             button.className = 'btn btn-primary d-block w-100'
+            let footer = document.getElementById('color')
+            footer.style =  'background-color: blue'
         } else if(weatherForm.main.temp < 70){
             message.innerHTML = 'That is a beautifull weather. Greate time to hang out outside!'
             let navBar = document.getElementById('nav')
             navBar.className = 'navbar navbar-dark bg-success'
             let button = document.getElementById('button')
             button.className = 'btn btn-success d-block w-100'
+            let footer = document.getElementById('color')
+            footer.style =  'background-color: green'
         } else if(weatherForm.main.temp < 85){
-            message.innerHTML = 'Really warm day today. I would recommend to stay home, but still ok time to hang out.'
+            message.innerHTML = 'Really warm day today. I would recommend to stay home, but still ok to hang out.'
             let navBar = document.getElementById('nav')
             navBar.className = 'navbar navbar-dark bg-warning'
             let button = document.getElementById('button')
             button.className = 'btn btn-warning d-block w-100'
+            let footer = document.getElementById('color')
+            footer.style =  'background-color: yellow'
         } else {
             message.innerHTML = 'Extremely hot day! Defently recommend to stay home.'
             let navBar = document.getElementById('nav')
             navBar.className = 'navbar navbar-dark bg-danger'
             let button = document.getElementById('button')
             button.className = 'btn btn-danger d-block w-100'
+            let footer = document.getElementById('color')
+            footer.style =  'background-color: red'
         }      
     }
         form.addEventListener('submit', handleSubmit)
